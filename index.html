@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Bleach</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$(".dropdown-content a").click(function(){
+			  	console.log($(this).data("page"));
+			  	$('#main').load($(this).data("page"));
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<ul>
+	 <li><a>Home</a></li>
+ 	 <li>
+ 	 	<div class="dropdown">
+ 	 		<button class="dropbtn">Court Guard Squads</button>
+			<div class="dropdown-content">
+				<a data-page="Royal_Guard.html">Royal Guard</a>
+		    	<a href="Squad_1.html">Squad 1</a>
+		    	<a href="Squad_2.html">Squad 2</a>
+		    	<a href="Squad_3.html">Squad 3</a>
+		    	<a href="Squad_4.html">Squad 4</a>
+		    	<a href="Squad_5.html">Squad 5</a>
+		    	<a href="Squad_6.html">Squad 6</a>
+		    	<a href="Squad_7.html">Squad 7</a>
+		    	<a href="Squad_8.html">Squad 8</a>
+		    	<a href="Squad_9.html">Squad 9</a>
+		    	<a href="Squad_10.html">Squad 10</a>
+		    	<a href="Squad_11.html">Squad 11</a>
+		    	<a href="Squad_12.html">Squad 12</a>
+		    	<a href="Squad_13.html">Squad 13</a>
+		    </div>
+ 	 	</div>
+ 	 </li>
+ 	 <li>
+ 	 	<div class="dropdown">
+ 	 		<button class="dropbtn"><a href="Espada.html">Espada</a></button>
+			<div class="dropdown-content">
+				<a href="Coyote_Starrk.html">Coyote Starrk</a>
+		    	<a href="Baraggan_Louisenbairn.html">Baraggan Louisenbairn</a>
+		    	<a href="Nelliel_Tu_Odelschwanck.html">Nelliel Tu Odelschwanck</a>
+		    	<a href="Tier_Harribel.html">Tier Harribel</a>
+		    	<a href="Ulquiorra_Cifer.html">Ulquiorra Cifer</a>
+		    	<a href="Nnoitra_Gilga.html">Nnoitra Gilga</a>
+		    	<a href="Luppi_Antenor.html">Luppi Antenor</a>
+		    	<a href="Grimmjow_Jaegerjaquez.html">Grimmjow Jaegerjaquez</a>
+		    	<a href="Zommari_Rureaux.html">Zommari Rureaux</a>
+		    	<a href="Szayelaporro_Granz.html">Szayelaporro Granz</a>
+		    	<a href="Aaroniero_Arruruerie.html">Aaroniero Arruruerie</a>
+		    	<a href="Yammy_Llargo.html">Yammy Llargo</a>
+		    </div>
+ 	 	</div>
+ 	 </li>
+ 	 <li>
+ 	 	<div class="dropdown"
+> 	 		<button class="dropbtn"><a href="Xcution.html">Xcution</a></button>
+			<div class="dropdown-content">
+				<a href="Kūgo_Ginjō.html">Kūgo Ginjō</a>
+		    	<a href="Giriko_Kutsuzawa.html">Giriko Kutsuzawa</a>
+		    	<a href="Riruka_Dokugamine.html">Riruka Dokugamine</a>
+		    	<a href="Jackie_Tristan.html">Jackie Tristan</a>
+		    	<a href="Shūkurō_Tsukishima.html">Shūkurō Tsukishima</a>
+		    	<a href="Yukio_Hans_Vorarlberna.html">Yukio Hans Vorarlberna</a>
+		    	<a href="Moe_Shishigawara.html">Moe Shishigawara</a>
+		    </div>
+ 	 	</div>
+ 	 </li>
+	</ul>
+	<div id="main"style="padding:20px;margin-top:30px;"></div>
+</body>
